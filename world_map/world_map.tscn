@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://ds2cnr522b30o"]
+
+[ext_resource type="Texture2D" uid="uid://dikjhqtxcjbjv" path="res://assets/terrain_types.png" id="1_088kp"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yw1td"]
+texture = ExtResource("1_088kp")
+texture_region_size = Vector2i(64, 74)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_0j0n0"]
+tile_shape = 3
+tile_size = Vector2i(64, 74)
+sources/0 = SubResource("TileSetAtlasSource_yw1td")
+
+[node name="WorldMap" type="Node2D" unique_id=1799730851]
+
+[node name="TerrainLayer" type="TileMapLayer" parent="." unique_id=1761001639]
+tile_set = SubResource("TileSet_0j0n0")
