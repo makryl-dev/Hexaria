@@ -1,6 +1,6 @@
 class_name  MapGenerator
-var land = "res://terrain_type/land.tres"
-var water = "res://terrain_type/water.tres"
+var land: Resource = preload("res://terrain_type/land.tres")
+var water: Resource = preload("res://terrain_type/water.tres")
 
 func generate_world() -> WorldMap:
 	var map := WorldMap.new()
