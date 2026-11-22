@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://ds2cnr522b30o"]
 
 [ext_resource type="Texture2D" uid="uid://dikjhqtxcjbjv" path="res://assets/terrain_types.png" id="1_6xmxd"]
+[ext_resource type="Script" uid="uid://kah0wq2vwg4g" path="res://world/world.gd" id="1_tcf2h"]
+[ext_resource type="Script" uid="uid://bufl1vl85j726" path="res://world/world_renderer.gd" id="3_4717r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yw1td"]
 texture = ExtResource("1_6xmxd")
@@ -15,6 +17,12 @@ tile_size = Vector2i(64, 74)
 sources/0 = SubResource("TileSetAtlasSource_yw1td")
 
 [node name="World" type="Node2D" unique_id=1799730851]
+script = ExtResource("1_tcf2h")
 
 [node name="TerrainLayer" type="TileMapLayer" parent="." unique_id=1761001639]
 tile_set = SubResource("TileSet_0j0n0")
+
+[node name="WorldRenderer" type="Node" parent="." unique_id=1615347802 node_paths=PackedStringArray("terrain_layer")]
+script = ExtResource("3_4717r")
+terrain_layer = NodePath("../TerrainLayer")
+metadata/_custom_type_script = "uid://bufl1vl85j726"
