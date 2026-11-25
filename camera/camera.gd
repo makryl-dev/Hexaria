@@ -18,14 +18,13 @@ func zoom_out() -> void:
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
-		if event.button_mask == MOUSE_BUTTON_MASK_MIDDLE:
+		if Input.is_action_pressed("camera_drag_move"):
 			position -= event.relative / zoom
-	if event is InputEventMouseButton:
-		if event.is_pressed():
-			if event.button_index == MOUSE_BUTTON_WHEEL_UP:
-				zoom_out()
-			if event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
-				zoom_in()
+	
+	if event.is_action_pressed("camera_zoom_out"):
+		zoom_out()
+	elif event.is_action_pressed("camera_zoom_in"):
+		zoom_in()
 
 func _physics_process(delta: float) -> void:
 	var prev_zoom: Vector2 = zoom
