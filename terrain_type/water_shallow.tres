@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TerrainType" format=3 uid="uid://bip3fpnqeqsfw"]
+
+[ext_resource type="Script" uid="uid://vjl7by8fnpxg" path="res://terrain_type/terrain_type.gd" id="1_2vq0g"]
+
+[resource]
+script = ExtResource("1_2vq0g")
+name = "Shallow Water"
+water = true
+metadata/_custom_type_script = "uid://vjl7by8fnpxg"

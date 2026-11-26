@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TerrainType" format=3 uid="uid://cday5ywmpff85"]
+
+[ext_resource type="Script" uid="uid://vjl7by8fnpxg" path="res://terrain_type/terrain_type.gd" id="1_yu7nu"]
+
+[resource]
+script = ExtResource("1_yu7nu")
+name = "Deserted Mountains"
+atlas_coordinates = Vector2i(3, 2)
+metadata/_custom_type_script = "uid://vjl7by8fnpxg"

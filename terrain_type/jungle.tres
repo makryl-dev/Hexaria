@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TerrainType" format=3 uid="uid://bty5y1tj7c3mu"]
+
+[ext_resource type="Script" uid="uid://vjl7by8fnpxg" path="res://terrain_type/terrain_type.gd" id="1_cw6gv"]
+
+[resource]
+script = ExtResource("1_cw6gv")
+name = "Jungle"
+atlas_coordinates = Vector2i(3, 1)
+metadata/_custom_type_script = "uid://vjl7by8fnpxg"

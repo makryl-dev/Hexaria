@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TerrainType" format=3 uid="uid://vcjgmm7jsg8t"]
+
+[ext_resource type="Script" uid="uid://vjl7by8fnpxg" path="res://terrain_type/terrain_type.gd" id="1_lwoyn"]
+
+[resource]
+script = ExtResource("1_lwoyn")
+name = "Snowy Mountains"
+atlas_coordinates = Vector2i(2, 2)
+metadata/_custom_type_script = "uid://vjl7by8fnpxg"
