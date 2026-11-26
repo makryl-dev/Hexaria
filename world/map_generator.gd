@@ -18,7 +18,18 @@ func generate_world() -> WorldMap:
 	var map := WorldMap.new()
 	
 	var layout: Dictionary = {
-		Vector2i(0,0) : _terrain_types['p']
+		Vector2i(0, 0): _terrain_types["p"],
+		Vector2i(1, 0): _terrain_types["f"],
+		Vector2i(2, 0): _terrain_types["m"],
+		Vector2i(0, 1): _terrain_types["f"],
+		Vector2i(1, 1): _terrain_types["p"],
+		Vector2i(-1, 0): _terrain_types["ws"],
+		Vector2i(-1, 1): _terrain_types["wm"],
+		Vector2i(-2, 1): _terrain_types["wd"],
+		Vector2i(0, -1): _terrain_types["d"],
+		Vector2i(1, -1): _terrain_types["dm"],
+		Vector2i(0, 2): _terrain_types["sf"],
+		Vector2i(1, 2): _terrain_types["sm"],
 	}
 	
 	var id: int = 0
